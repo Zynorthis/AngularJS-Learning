@@ -1,0 +1,16 @@
+<div>
+    <h1 ng-hide="testingBool" class="warning-text">App did not start correctly.</h1>
+    <h1 ng-show="testingBool" class="success-text">{{successMessge}}</h1>
+    <hr>
+    <div id="rules">
+        <h3>Rules</h3>
+        <br>
+        <p>Each question is timed and will expire after 5 seconds.</p>
+        <p>There are a total of 50 questions to answer.</p>
+        <p>Answer the questions to the best of you abilities, there will be no going back once a question is completed.</p>
+        <br>
+        <p>When you are ready to begin, click the button below to start.</p>
+        <h4>Good Luck!</h4>
+    </div>
+    <button ng-click="startTest()">Start Test</button>
+</div>

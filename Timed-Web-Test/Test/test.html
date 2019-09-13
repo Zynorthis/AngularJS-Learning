@@ -3,11 +3,16 @@
     <div id="questionCounter">{{questionCounter}} / 50</div>
 </div>
 
-<h2>Question {{questionCounter}}</h2>
+<h1>Question {{questionCounter}}</h1>
 <hr>
 
-<!--Question Directive-->
+<h3>{{currentQuestion}}</h3>
 
-<!--ng-repeat for question options directive-->
+<form>
+    <div np-repeat="option in options" class="option">
+        <input type="radio" value="{{option.value}}">
+        <label for="{{option.value}}">{{option.label}}</label>
+    </div>
 
-<button ng-click="submitAnswer()">Submit</button>
+    <button ng-click="submitAnswer()">Submit</button>
+</form>

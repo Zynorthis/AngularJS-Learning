@@ -10,6 +10,12 @@ hr{
     margin-bottom: 25px;
 }
 
+h3{
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    padding-bottom: 25px;
+}
 body{
     text-align: center;
 }
@@ -35,10 +41,10 @@ button{
 
 .header{
     padding-top: 10px;
-    padding-bottom: 45px;
+    padding-bottom: 90px;
     margin-bottom: 50px;
     font-size: 35px;
-    background-color: lightgrey
+    background-image: linear-gradient(lightgray, white);
 }
 
 .header #counter, .header #questionCounter{

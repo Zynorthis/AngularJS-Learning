@@ -6,7 +6,7 @@
         }).when('/test', {
             templateUrl: 'Test/test.html',
             controller: 'TestController'
-        }).otherwise({ redirectTo: "/test" });
+        }).otherwise({ redirectTo: "/rules" });
         $locationProvider.html5Mode(true);
     });
     var AppLoadingOutput = function(){

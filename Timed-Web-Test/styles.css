@@ -11,7 +11,6 @@ hr{
 }
 
 body{
-    padding-top: 10px;
     text-align: center;
 }
 
@@ -32,4 +31,27 @@ button{
 
 .success-text{
     color: green;
+}
+
+.header{
+    padding-top: 10px;
+    padding-bottom: 45px;
+    margin-bottom: 50px;
+    font-size: 35px;
+    background-color: lightgrey
+}
+
+.header #counter, .header #questionCounter{
+    display: inline;
+}
+
+#counter{
+    float: left;
+    margin-left: 20px;
+    color: crimson;
+}
+
+#questionCounter{
+    float: right;
+    margin-right: 20px;
 }

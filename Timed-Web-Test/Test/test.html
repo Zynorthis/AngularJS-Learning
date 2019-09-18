@@ -9,10 +9,9 @@
 <h3>{{currentQuestion}}</h3>
 
 <form>
-    <div np-repeat="option in options" class="option">
-        <input type="radio" value="Test Option {{option.value}}">
-        <label for="{{option.value}}">{{option.label}}</label>
-    </div>
+    <label ng-repeat="option in options" class="option">
+        <input type="radio" value="{{option.value}}">Option {{option.value}}
+    </label>
 
     <button ng-click="submitAnswer()">Submit</button>
 </form>

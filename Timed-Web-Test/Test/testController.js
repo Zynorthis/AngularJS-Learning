@@ -20,11 +20,11 @@ var TestController = function($scope, $interval, testOptions, testQuestions){
         }
     };
 
-    $scope.submitAnswer = function(selectedOption){
-        console.log(selectedOption + " was selected.");
+    $scope.submitAnswer = function(){
+        console.log($scope.selectedOption + " was selected.");
         $interval.cancel(isCountingDown);
         isCountingDown = null;
-        if (selectedOption == 1){
+        if ($scope.selectedOption == 1){
             $scope.score += 1;
         }
         $scope.questionCounter += 1;
@@ -33,6 +33,7 @@ var TestController = function($scope, $interval, testOptions, testQuestions){
     };
 
     var isCountingDown = null;
+    $scope.selectedOption = 0;
     $scope.counter = 5; // timer
     $scope.questionCounter = 1; // what question the user is on
     $scope.score = 0; // how many questions have been answered correctly

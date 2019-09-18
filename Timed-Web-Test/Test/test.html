@@ -10,7 +10,7 @@
 
 <form>
     <label ng-repeat="option in options" class="option">
-        <input type="radio" value="{{option.value}}">Option {{option.value}}
+        <input type="radio" ng-model="selectedOption" value="{{option.value}}"> Option {{option.value}}
     </label>
 
     <button ng-click="submitAnswer()">Submit</button>

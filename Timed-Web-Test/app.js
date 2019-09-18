@@ -1,12 +1,12 @@
 (function () {
     var app = angular.module('myApp', ['ngRoute']).config(function ($routeProvider, $locationProvider) {
-        $routeProvider.when('/rules', {
+        $routeProvider.when('/', {
             templateUrl: 'Rules/rules.html',
             controller: 'RulesController'
         }).when('/test', {
             templateUrl: 'Test/test.html',
             controller: 'TestController'
-        }).otherwise({ redirectTo: "/rules" });
+        }).otherwise({ redirectTo: "/" });
         $locationProvider.html5Mode(true);
     });
     var AppLoadingOutput = function(){

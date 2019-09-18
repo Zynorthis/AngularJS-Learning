@@ -11,6 +11,7 @@ var RulesController = function($scope, $location){
 
     var RulesLoadingOutput = function(){
         console.log("Rules Controller was loaded successfully.");
+        return true;
     };
     RulesLoadingOutput();
 };

@@ -1,6 +1,6 @@
 var app = angular.module('myApp');
 
-var TestController = function($scope, $location, $interval, testOptions, testQuestions){
+var TestController = function($scope, $interval, testOptions, testQuestions){
 
     var TestLoadingOutput = function(){
         console.log("Test Controller was loaded successfully.");

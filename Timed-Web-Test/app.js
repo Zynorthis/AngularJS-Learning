@@ -8,9 +8,9 @@
             controller: 'TestController'
         }).otherwise({ redirectTo: "/" });
         $locationProvider.html5Mode(true);
+        var AppLoadingOutput = function(){
+            console.log("App.js was loaded successfully.");
+        };
+        AppLoadingOutput();
     });
-    var AppLoadingOutput = function(){
-        console.log("App.js was loaded successfully.");
-    };
-    AppLoadingOutput();
 })();

@@ -1,16 +1,16 @@
 var app = angular.module('myApp');
 
-var RulesController = function($scope, $location){
+var RulesController = function($scope, $location, $log){
     $scope.successMessge = "Angular is up and running!";
     $scope.testingBool = true;
     
     $scope.startTest = function(){
-        console.log("Start test button clicked.");
+        $log.info("Start test button clicked.");
         $location.path("/test");
     };
 
     var RulesLoadingOutput = function(){
-        console.log("Rules Controller was loaded successfully.");
+        $log.info("Rules Controller was loaded successfully.");
         return true;
     };
     RulesLoadingOutput();

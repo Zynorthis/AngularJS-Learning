@@ -1,9 +1,9 @@
 var app = angular.module('myApp');
 
-var TestController = function($scope, $interval, testOptions, testQuestions){
+var TestController = function($scope, $interval, $log, testOptions, testQuestions){
 
     var TestLoadingOutput = function(){
-        console.log("Test Controller was loaded successfully.");
+        $log.info("Test Controller was loaded successfully.");
         return true;
     };
     
@@ -21,7 +21,7 @@ var TestController = function($scope, $interval, testOptions, testQuestions){
     };
 
     $scope.submitAnswer = function(){
-        console.log($scope.selectedOption + " was selected.");
+        $log.info($scope.selectedOption + " was selected.");
         $interval.cancel(isCountingDown);
         isCountingDown = null;
         if ($scope.selectedOption == 1){
@@ -41,9 +41,9 @@ var TestController = function($scope, $interval, testOptions, testQuestions){
     $scope.options = options;
     var questions = testQuestions.questions;
     var question = questions[$scope.questionCounter - 1];
-    console.log(question);
+    $log.debug("Question: " + question);
     $scope.currentQuestion = question.label;
-    console.log($scope.currentQuestion);
+    $log.debug("Current Question: " + $scope.currentQuestion);
     var isTestLoaded = TestLoadingOutput();
     if(isTestLoaded){
         startCountdown();

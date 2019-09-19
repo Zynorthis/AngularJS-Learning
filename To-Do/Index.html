@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="toDoApp">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+        <meta name="title" content="To-Do App">
+        <meta name="description" content="A Basic AngularJS To-Do App">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-ie8-build/1.4.0/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <script src="app.js"></script>
+
+        <title>To-Do App</title>
+    </head>
+    <body ng-controller="toDoApp">
+        <h1>{{ title }}</h1>
+        <to-do></to-do>
+    </body>
+</html>

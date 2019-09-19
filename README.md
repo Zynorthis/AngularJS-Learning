@@ -9,6 +9,6 @@ The following are the courses that I have followed and the resources I have used
 
 | Name | Description |
 | :--: | :--: |
-| [AngularJS: Getting Started](https://app.pluralsight.com/library/courses/angularjs-get-started) | An introductory video series by Scott Allen on the basics of AngularJS |
-| [AngularJS Fundamentals](https://app.pluralsight.com/library/courses/angularjs-fundamentals) | A beginner series with Joe Eames and Jim Cooper going over the fundamentals of AngularJS |
+| [W3 Schools](https://www.w3schools.com/angular/default.asp) | A good intro to AngularJS with many examples and built in coding playgrounds |
 | [AngularJS API Docs](https://docs.angularjs.org/api) | A great reference from the AngularJS team to help understand all of AngularJS |
+| [Pluralsight AngularJS](https://app.pluralsight.com/paths/skills/angular-js) | The following are a list of all of the courses I completed: <ul><li>[AngularJS: Getting Started](https://app.pluralsight.com/library/courses/angularjs-get-started)</li><li>[AngularJS Fundamentals](https://app.pluralsight.com/library/courses/angularjs-fundamentals)</li><li>[AngularJS Services In-Depth](https://app.pluralsight.com/library/courses/angularjs-services-in-depth)</li><li>[AngularJS Routing In-Depth](https://app.pluralsight.com/library/courses/angular-routing-in-depth)</li><li>[AngularJS Directives Fundamentals](https://app.pluralsight.com/library/courses/angularjs-directive-fundamentals)</li><li>[AngularJS In-Depth](https://app.pluralsight.com/library/courses/angularjs-in-depth)</li></ul> |
